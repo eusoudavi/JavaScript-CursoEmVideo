@@ -1,7 +1,7 @@
 var c = 1
 
 while (c <= 10) {
-    console.log(`whilhe ${c}`)
+    console.log(`while ${c}`)
     c++
 }
 
