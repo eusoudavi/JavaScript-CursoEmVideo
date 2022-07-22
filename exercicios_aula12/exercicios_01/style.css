@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(162, 212, 212);
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 3px black;
+
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    /* height: 300px; */
+    margin: auto;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.623);
+
+}
+
+#entradas {
+    display: flex;
+    flex-direction: column;
+}
+#entradaAno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 390px;
+    align-items: center;
+}
+#entradaAno > input {
+    margin-left: 10px;
+    height: 20px;
+    width: 100px;
+}
+#generoPlace {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    width: 400px;
+}
+
+#saida {
+    text-align: center;
+}
+
+
+
+/* AJUSTE DA IMAGEM PARA FICAR ARREDONDADA */
+#saidaImagem {
+    border-radius: 100%;
+}
+/* div {
+    text-align: center;
+} */
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}

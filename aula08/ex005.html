@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com  DOM</title>
+
+    <style>
+        body{
+            background: rgb(32, 46, 45);
+            color: white;
+            font: normal 13pt Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando esdudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div class = "novatag">Teste 01</div>
+    <div class = "novatag">Teste 02</div>
+        
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue' //Posso fazer alterações no stilo do site pelo JS
+
+        // corpo.style.background = 'black'
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+        
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...' // Posso alterar o texto da div do HMTL
+        var e = window.document.getElementsByClassName('novatag')[0]
+        e.style.background = 'black'
+
+        var f = window.document.querySelector('div#msg')
+        f.style.color = 'purple'
+        var g = window.document.querySelector('div.novatag')
+        g.innerText = 'mudei a tag'
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div id="entradas">
+            <div id="entradaAno">
+                <p>Em que ano você nasceu?</p>
+                <input type="text" id="anoQueNasceu">
+            </div>
+
+            <div id="generoPlace">
+                <p>Sexo:</p>
+                <input type="checkbox" name="" id="Masc" onclick="marcaUm()">
+                <label for="Masc">Masculino</label>
+                <input type="checkbox" name="" id="Fem" onclick="marcaUm()">
+                <label for="Fem">Feminino</label>
+                <button onclick="verificar()">Verificar</button>
+            </div>
+
+            <!-- Poderia utilizar a estrutura do RADIO-->
+            <!-- Nessa estrutura ele já faz a troca automática entre os seletores com o mesmo nome -->
+            <!--
+                <input type="radio" name="sex" id="Masc">
+                <label for="Masc">Masculino</label>
+                <input type="radio" name="sex" id="Fem">
+                <label for="Fem">Feminino</label>
+            -->
+
+        </div>
+
+        <div id="saida">
+            <p id="saidaIdade">Preencha os dados acima!</p>
+            <img id="saidaImagem" src="" width="250px">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
