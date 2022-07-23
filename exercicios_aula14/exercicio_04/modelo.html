@@ -9,15 +9,19 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
-        <div>
+        <div id="entrada">
+            <label for="tab">Qual o número da taduada?</label>
+            <input id="tabuada" type="number" name="tab" placeholder="00000"> <br>
             
+            <button onclick="calcular()">Calcular</button>
         </div>
 
-        <div>
+        <div id="saida">
+            <select name="showTabuada" id="mostraTabuada" size="10"></select>
 
         </div>
     </section>
