@@ -1,0 +1,56 @@
+body {
+    /* background-color: rgb(149, 229, 229); */
+    background-image: linear-gradient(45deg, rgb(255, 98, 0) 1%, rgb(241, 66, 130), rgb(204, 116, 241) 85%);
+    height: 100vh;
+    font: normal 15pt Arial;
+
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 3px black;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.623);
+}
+#entrada {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+#entrada > label {
+    display: block;
+    float:left; 
+    /* A variável label precisa ser ajustada para block e ajustada com o float para ficar na esquerda do próximo bloco*/
+    width: 45%;
+    font-size: 13pt;
+}
+#entrada > input {
+    width: 100px;
+}
+#saida {
+    margin: 0 auto;
+}
+#saida > select {
+    margin-top: 5%;
+    width: 30%;
+    /* height: 200px; */
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
